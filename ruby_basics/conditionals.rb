@@ -1,3 +1,15 @@
+
+
+def isogram?(string)
+  original_length = string.length
+  string_array = string.downcase.split
+
+  unique_length = string_array.uniq.length
+  original_length == unique_length
+end
+
+isogram?("Odin")
+
 # puts "put in a number "
 # num = gets.chomp.to_i
 
@@ -39,9 +51,28 @@
 
 # puts greet("juan")
 
-def scream(words)
-  words = words + "!!!"
-  puts words
-end
+# def scream(words)
+#   words = words + "!!!"
+#   puts words
+# end
 
-p scream('hi')
+# p scream('hi')
+
+# def isogram?(string)
+#   original_length = string.length
+  
+#   p original_length
+
+#   string_array = string.downcase.split('') # split is missing delimiter
+  
+#   p string_array
+
+#   unique_length = string_array.uniq.length
+  
+#   p unique_length
+
+#   original_length == unique_length
+
+# end
+
+# puts isogram?("Odin")
